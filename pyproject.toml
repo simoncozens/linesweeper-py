@@ -4,17 +4,37 @@ build-backend = "maturin"
 
 [project]
 name = "linesweeper"
-requires-python = ">=3.8"
+description = "Boolean operations on paths (intersection, union, difference, xor) for font development"
+requires-python = ">=3.9"
+authors = [
+    { name = "Simon Cozens", email = "simon@simon-cozens.org" },
+]
+keywords = ["font", "bezier", "boolean", "path", "overlap"]
 classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Fonts",
 ]
 dynamic = ["version"]
 dependencies = [
     "kurbopy>=0.13.1", # Do not need same version as linesweeper
     "ufoLib2",
-    "fontTools"
+    "fontTools",
 ]
 license-files = ["LICENSE.txt"]
 readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/simoncozens/linesweeper-py"
+Repository = "https://github.com/simoncozens/linesweeper-py"
+Issues = "https://github.com/simoncozens/linesweeper-py/issues"

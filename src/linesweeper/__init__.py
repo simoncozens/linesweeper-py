@@ -23,7 +23,7 @@ def binary_op(
         set_a: The first set of paths.
         set_b: The second set of paths.
         fill_rule: The fill rule to use ("nonzero" or "evenodd").
-        operation: The boolean operation to perform ("union", "intersection", "difference", or "
+        operation: The boolean operation to perform ("union", "intersection", "difference", or "xor").
     """
     svgs = _binary_op(set_a, set_b, fill_rule, operation)
     bezpaths = [BezPath.from_svg(svg) for svg in svgs]
